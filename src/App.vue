@@ -1,8 +1,13 @@
 <template>
+  <ul class="nav-links">
+    <router-link to="/hello-world">Hello World</router-link>
+    <router-link to="/store">Store</router-link>
+    <router-link to="/store-example">StoreExample</router-link>
+  </ul>
+  <router-view />
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
-
-  <StoreTest />
+  <!-- <StoreTest /> -->
   <!-- <TestStore /> -->
   <!-- <Test /> -->
 </template>
@@ -25,6 +30,10 @@ export default {
 </script>
 
 <style>
+.nav-links a {
+  margin: 3px;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -47,6 +56,7 @@ export default {
   justify-content: space-between;
   align-items: center;
 }
+
 .card:hover {
   border: 1px solid rgb(35, 35, 35);
   box-shadow: 1px 2px 10px 1px rgba(0, 0, 0, 0.2);
