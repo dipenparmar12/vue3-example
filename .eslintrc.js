@@ -8,6 +8,12 @@ module.exports = {
     ecmaVersion: '2021', // Allows for the parsing of modern ECMAScript features
   },
 
+  // env: {
+  //   node: true,
+  //   browser: true,
+  //   'vue/setup-compiler-macros': true,
+  // },
+
   // Rules order is important, please avoid shuffling them
   extends: [
     // Base ESLint recommended rules
@@ -22,6 +28,7 @@ module.exports = {
 
     // https://github.com/prettier/eslint-config-prettier#installation
     // usage with Prettier, provided by 'eslint-config-prettier'.
+    'prettier',
     // "plugin:prettier/recommended",
   ],
 
@@ -37,11 +44,7 @@ module.exports = {
 
   globals: {
     ga: 'readonly', // Google Analytics
-    cordova: 'readonly',
-    __statics: 'readonly',
-    __QUASAR_SSR__: 'readonly',
     process: 'readonly',
-    Capacitor: 'readonly',
     chrome: 'readonly',
   },
 
@@ -62,6 +65,7 @@ module.exports = {
 
     'vue/multi-word-component-names': 'off',
     'vue/require-prop-types': 'off',
-    'vue/max-attributes-per-line': 'off',
+    'vue/require-default-prop': 'off',
+    'vue/require-prop-type-constructor': 'warn',
   },
 }

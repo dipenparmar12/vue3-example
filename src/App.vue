@@ -3,6 +3,7 @@
     <router-link to="/hello-world">Hello World</router-link>
     <router-link to="/store">Store</router-link>
     <router-link to="/store-example">StoreExample</router-link>
+    <router-link to="/modal">Modal</router-link>
   </ul>
   <router-view />
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
@@ -38,7 +39,6 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #21374d;
   margin-top: 10px;
 }
